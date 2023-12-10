@@ -1,6 +1,6 @@
 import { MeshWobbleMaterial, OrbitControls, useGLTF, useHelper } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
-import ParticlesContainer from "./particlesContainer";
+import ParticlesContainer from "./components/ParticlesContainer";
 import * as React from 'react';
 import { useRef, useState } from "react";
 import { DirectionalLightHelper } from "three";
@@ -177,7 +177,7 @@ const App = () => {
     <Canvas>
       <Scene/> 
     </Canvas>
-   {/*  <ParticlesContainer/> */}
+    <ParticlesContainer/>
     <div> hehehe</div>
     <Canvas>
         <Cube/>
