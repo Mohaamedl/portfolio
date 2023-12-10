@@ -177,13 +177,8 @@ const App = () => {
     <Canvas>
       <Scene/> 
     </Canvas>
-    <ParticlesContainer/>
-    <div> hehehe</div>
-    <Canvas>
-        <Cube/>
-
-    </Canvas>
-   
+    <ParticlesContainer/> 
+    
     
     
     </>
