@@ -1,10 +1,12 @@
-import { MeshWobbleMaterial, OrbitControls, useHelper, useGLTF } from "@react-three/drei";
+import { MeshWobbleMaterial, OrbitControls, useGLTF, useHelper } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { useControls } from "leva";
+import ParticlesContainer from "./particlesContainer";
 import * as React from 'react';
 import { useRef, useState } from "react";
 import { DirectionalLightHelper } from "three";
 import "./App.css";
+
+
 const Cube = ({position,color,size})=>{
 
   const ref = useRef()
@@ -103,18 +105,10 @@ const Sphere = ({position,color,size})=>{
     wireframe/>
   </mesh>)
 }
-const Torus = ({position,size})=>{
+const Torus = ({position,size,color,radius})=>{
 
   const ref = useRef()
-  const {color,radius} = useControls({
-    color:"purple",
-    radius:{
-      value:3,
-      min:1,
-      max:10,
-      step:0.1
-    }
-  })
+  
 
   useFrame((state,delta)=>{
     //ref.current.rotation.z +=2*delta;
@@ -130,26 +124,18 @@ const Torus = ({position,size})=>{
 }
 const Scene = () =>{
   const directionalLightRef = useRef();
-  const {lightColor,lightIntensity} = useControls({
-    lightColor:"white",
-    lightIntensity:{
-      value:0.7,
-      min:0.1,
-      max:5,
-      step:0.2
-    }
-  })
+  
   useHelper(directionalLightRef, DirectionalLightHelper, 0.5, "white")
   return(
     <> 
     <directionalLight 
     position={[0,5,5]}
-    intensity={lightIntensity}
-    color={lightColor}
+    intensity={5}
+    color={'white'}
     
     ref={directionalLightRef}
     />
-      <ambientLight intensity={0.3}/>
+     {/*  <ambientLight intensity={0.3}/> */}
       {/* <group>
         <Cube position={[3,0,0]} color = {"blue"} size={[3,3,3]}/>
         <Cube position={[-3,0,0]} color = {"green"} size={[3,3,3]}/>
@@ -158,10 +144,11 @@ const Scene = () =>{
       </group> */}
       {/* <Cube position={[1,1,0]} color = {"hotpink"} size={[3,3,5]}/> */}
       <Sphere size={[1,20,20]} position={[0,2,1]} color={"green"} />
-    {/*   <Torus  position={[0,-2,-1]} size={[2,30,200]}/> */}
-      <Model position={[0,1,0]}/>
+   {/* <Torus  position={[0,-2,-1]} size={[2,30,200]}/> */}
+       <Model position={[0,1,0]}/>
       <Macbook position={[0,0,-1]}/>
-      <OrbitControls/>
+      {/* <OrbitControls/>  */}
+      
       </>
   );
   
@@ -186,11 +173,21 @@ const Model = (props) =>{
 
 useGLTF.preload('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/react-logo/model.gltf')
 const App = () => {
-  return(
+  return(<>
     <Canvas>
       <Scene/> 
-    
     </Canvas>
+   {/*  <ParticlesContainer/> */}
+    <div> hehehe</div>
+    <Canvas>
+        <Cube/>
+
+    </Canvas>
+   
+    
+    
+    </>
+    
     
   );
 }
