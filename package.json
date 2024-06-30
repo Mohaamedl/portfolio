@@ -17,6 +17,7 @@
     "@tsparticles/engine": "^3.0.2",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/shape-image": "^3.4.0",
+    "@vercel/speed-insights": "^1.0.12",
     "framer-motion": "^10.16.16",
     "leva": "^0.9.35",
     "maath": "^0.10.4",
