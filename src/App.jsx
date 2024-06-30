@@ -3,6 +3,11 @@ import React from 'react';
 import { BrowserRouter } from "react-router-dom";
 import { About, Contact, Experience, Feedback, Home, Navbar, ParticlesContainer, Tech, Works } from './components';
 import { StarsCanvas } from './components/canvas';
+
+import '../dotenv.config.js';
+
+
+
 const App = () => {
   return(
   <>

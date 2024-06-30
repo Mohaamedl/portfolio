@@ -6,7 +6,7 @@ import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { slideIn } from "../utils/motion";
 import { SpaceCanvas } from "./canvas";
-import './dotenv.config.js';
+
 
 const Contact = () => {
   const serviceId = import.meta.env.VITE_APP_EMAILJS_SERVICE_ID;
