@@ -17,10 +17,10 @@ const App = () => {
     <ParticlesContainer></ParticlesContainer>
       <div className = "relative z-1">
         <Navbar/>
-        <div className="absolute inset-0  w-full h-full z-0 ">
-                <RoomCanvas />
-        </div>
         <Home/>
+        
+        
+        
         <SpeedInsights/>
         {/* avatar here in the future */}
       </div>

@@ -7,11 +7,12 @@ const Home = () => {
 
     return (
         <section className = "relative w-full h-screen mx-auto">
-            <div className ={`-${styles.paddingX} -ml-10 absolute insert-0 top-[100px] 
-            max-w-7xl mx-auto flex felx-row items-start gap-5 z-10`}>
+            
+            <div className ={`-${styles.paddingX} ml-32 absolute insert-0 top-[100px] 
+            max-w-7xl mx-auto flex felx-col items-start gap-5 z-10 pointer-events-none`}>
                 <div className = "flex flex-col justify-center items-center mt-5">
                     <div className="w-5 h-5 rounded-full bg-[#14643f]" />
-                    <div className="w-1 sm:h-80 h-40 green-gradient" />
+                    <div className="w-1 sm:h-80 h-40 green-gradient " />
                 </div>
                 <div className="">
                     <h1 className={`${styles.heroHeadText} text-white`}>Hi, I'm <span className="text-[#14643f]">Mohamed</span></h1>
@@ -19,7 +20,7 @@ const Home = () => {
                 </div>
                 
             </div>
-            
+            <RoomCanvas></RoomCanvas>
             
             <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center ">
                 <a href="#about">
@@ -42,4 +43,4 @@ const Home = () => {
     )
 }
 
-export default SectionWrapper(Home,"")
+export default Home
