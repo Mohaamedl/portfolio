@@ -15,7 +15,7 @@ const Home = () => {
                 </div>
                 <div>
                     <h1 className={`${styles.heroHeadText} text-white`}>Hi, I'm <span className="text-[#14643f]">Mohamed</span></h1>
-                    <p className={`${styles.heroSubText} mt-2 text-white-100 `}>A Software Developer and Physicist </p>
+                    <p className={`${styles.heroSubText} mt-2 text-black-100 `}>A Software Developer and Physicist </p>
                 </div>
                 
             </div>

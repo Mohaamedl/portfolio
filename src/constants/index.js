@@ -1,29 +1,26 @@
 import {
-    mobile,
-    backend,
-    creator,
-    web,
-    javascript,
-    typescript,
-    html,
-    css,
-    reactjs,
-    redux,
-    tailwind,
-    nodejs,
-    mongodb,
-    git,
-    figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
-  } from "../assets";
+  backend,
+  carrent,
+  creator,
+  cs,
+  css,
+  git,
+  html,
+  javascript,
+  jobit,
+  matlab,
+  mobile,
+  nodejs,
+  python,
+  reactjs,
+  shopify,
+  starbucks,
+  tailwind,
+  tesla,
+  tripguide,
+  typescript,
+  web,
+} from "../assets";
   
   export const navLinks = [
     {
@@ -61,6 +58,19 @@ import {
   
   const technologies = [
     {
+      name:"Python",
+      icon: python
+    }
+    ,
+    {
+      name:"C#",
+      icon:cs
+    },
+    {
+      name:"Matlab",
+      icon:matlab
+    },
+    {
       name: "HTML 5",
       icon: html,
     },
@@ -80,10 +90,7 @@ import {
       name: "React JS",
       icon: reactjs,
     },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
+    
     {
       name: "Tailwind CSS",
       icon: tailwind,
@@ -92,26 +99,13 @@ import {
       name: "Node JS",
       icon: nodejs,
     },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
+
     {
       name: "git",
       icon: git,
     },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
+
+
   ];
   
   const experiences = [
@@ -250,4 +244,5 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { experiences, projects, services, technologies, testimonials };
+
