@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter } from "react-router-dom";
 import { About, Contact, Experience, Feedback, Home, Navbar, ParticlesContainer, Tech, Works } from './components';
 import { StarsCanvas } from './components/canvas';
-
+import { RoomCanvas } from "../src/components/canvas"
 
 
 
@@ -17,10 +17,14 @@ const App = () => {
     <ParticlesContainer></ParticlesContainer>
       <div className = "relative z-1">
         <Navbar/>
+        <div className="absolute inset-0  w-full h-full z-0 ">
+                <RoomCanvas />
+        </div>
         <Home/>
         <SpeedInsights/>
         {/* avatar here in the future */}
       </div>
+      
       <About/>
       <Experience/>
       <Tech/>

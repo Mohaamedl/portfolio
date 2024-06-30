@@ -11,7 +11,7 @@ const Space = () =>{
     return(
         <primitive
         object={space.scene} 
-        scale={0.5}
+        scale={0.4}
         position-y={0}
         
         />
@@ -35,6 +35,7 @@ const SpaceCanvas = () => {
         <OrbitControls
             autoRotate
             enableZoom={false}
+            position={[0,0,0]}
             
 
             minPolarAngle={-Math.PI/4}

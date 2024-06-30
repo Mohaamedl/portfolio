@@ -22,7 +22,7 @@ const ParticlesContainer = () => {
     }, []);
 
     const particlesLoaded = (container) => {
-        console.log(container);
+        
     };
 
     

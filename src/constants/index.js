@@ -202,7 +202,7 @@ import {
         
       ],
       image: olympicGamesImage,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Mohaamedl/Projeto_ITW",
     },
     {
       name: "RPG Game And Database",
@@ -223,7 +223,7 @@ import {
         },
       ],
       image: rpgGameImage,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Mohaamedl/DB-project",
     },
     {
       name: "Twitch Platform Clone",
@@ -248,7 +248,7 @@ import {
         },
       ],
       image: twitchCloneImage,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Mohaamedl/Twitch_clone",
     },
   ];
   
