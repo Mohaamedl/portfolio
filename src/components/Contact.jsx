@@ -54,7 +54,7 @@ const Contact = () => {
     });
 
     
-    
+    let error ="";
 
     setErrors({
       ...errors,
