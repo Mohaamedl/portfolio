@@ -1,7 +1,7 @@
 
-import { loadSlim } from "@tsparticles/slim"
-import { useCallback, useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { loadSlim } from "@tsparticles/slim";
+import { useEffect, useState } from "react";
 const ParticlesContainer = () => {
     // init
     const [ init, setInit ] = useState(false);
@@ -31,13 +31,16 @@ const ParticlesContainer = () => {
     return (
          init && <Particles
             id="tsparticles"
+            className="w-full h-auto absolute inset-0 z-[0]"
             particlesLoaded={particlesLoaded}
             options={{
-                background: {
-                    color: {
-                        value: "#1B0417",
-                    },
+                background : {
+                    color: "#000000",
+                    
+                    
+                    
                 },
+                
                 fpsLimit: 120,
                 interactivity: {
                     events: {
@@ -68,13 +71,13 @@ const ParticlesContainer = () => {
                 },
                 particles: {
                     color: {
-                        value: "#FBE9D2",
+                        value: "#FFFFFF",
                     },
                     links: {
-                        color: "#DE714E",
+                        color: "#FFFFFF",
                         distance: 200,
-                        enable: true,
-                        opacity: 0.4,
+                        enable: false,
+                        opacity: 0.05,
                         width: 1,
                     },
                     move: {
@@ -95,14 +98,20 @@ const ParticlesContainer = () => {
                         value: 300,
                     },
                     opacity: {
-                        value: 0.5,
+                        value: 0.8,
+                        random:true,
                     },
                     shape: {
                         type: "circle",
+                        
+                        
+                        
+
                     },
                     size: {
-                        value: { min: 1, max: 6 },
-                    },
+                        value: { min: 0.5, max: 4 },
+                        random:true
+                    }
                 },
                 detectRetina: true,
             }}

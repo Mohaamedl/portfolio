@@ -5,11 +5,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#050816",
-        secondary: "#aaa6c3",
-        tertiary: "#151030",
-        "black-100": "#100d25",
-        "black-200": "#090325",
+        primary: "#040D12",
+        secondary: "#a6c3aa",
+        tertiary: "#5C8374",
+        "black-100": "#183D3D",
+        "black-200": "#040D12",
         "white-100": "#f3f3f3",
       },
       boxShadow: {
@@ -20,7 +20,9 @@ module.exports = {
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
+        
       },
+      
     },
   },
   plugins: [],
