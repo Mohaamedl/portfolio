@@ -6,14 +6,14 @@ import { StarsCanvas } from './components/canvas';
 const App = () => {
   return(
   <>
-  <SpeedInsights/>
+  
   <BrowserRouter>
     <div className = "relative z-0">
     <ParticlesContainer></ParticlesContainer>
       <div className = "relative z-1">
         <Navbar/>
         <Home/>
-        
+        <SpeedInsights/>
         {/* avatar here in the future */}
       </div>
       <About/>
