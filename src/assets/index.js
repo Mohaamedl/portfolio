@@ -7,6 +7,18 @@ import menu from "./menu.svg";
 import mobile from "./mobile.png";
 import web from "./web.png";
 
+import matlab from "./Matlab.png";
+import UA from "./UA.png";
+import carrent from "./carrent.png";
+import meta from "./company/meta.png";
+import shopify from "./company/shopify.png";
+import starbucks from "./company/starbucks.png";
+import tesla from "./company/tesla.png";
+import cs from "./cs.png";
+import jobit from "./jobit.png";
+import olympicGamesImage from "./olympicGamesImage.png";
+import python from "./python.png";
+import rpgGameImage from "./rpgGameImage.png";
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -20,25 +32,14 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
 import typescript from "./tech/typescript.png";
-
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-
-import matlab from "./Matlab.png";
-import carrent from "./carrent.png";
-import cs from "./cs.png";
-import jobit from "./jobit.png";
-import python from "./python.png";
 import tripguide from "./tripguide.png";
+import twitchCloneImage from "./twitchCloneImage.png";
 export {
-  backend, carrent, close, creator, cs, css,
-  docker,
-  figma, git, github, html,
+  UA, backend, carrent, close, creator, cs, css,
+  docker, figma, git, github, html,
   javascript, jobit, logo, matlab, menu, meta, mobile, mongodb,
-  nodejs, python, reactjs,
-  redux, shopify,
-  starbucks, tailwind, tesla, threejs, tripguide, typescript, web
+  nodejs, olympicGamesImage, python, reactjs,
+  redux, rpgGameImage, shopify,
+  starbucks, tailwind, tesla, threejs, tripguide, twitchCloneImage, typescript, web
 };
 

@@ -1,6 +1,6 @@
 import { OrbitControls, useGLTF } from "@react-three/drei"
 import { Canvas, useFrame } from "@react-three/fiber";
-
+import { Preload } from "@react-three/drei";
 import { Suspense } from "react"
 import CanvasLoader from "../Loader"
 
@@ -44,6 +44,7 @@ const SpaceCanvas = () => {
         <Space/>
 
         </Suspense>
+        <Preload all/>
 
     </Canvas>
   )

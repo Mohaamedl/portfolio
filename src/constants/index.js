@@ -1,25 +1,24 @@
 import {
+  UA,
   backend,
-  carrent,
   creator,
   cs,
   css,
   git,
   html,
   javascript,
-  jobit,
+  logo,
   matlab,
   mobile,
   nodejs,
+  olympicGamesImage,
   python,
   reactjs,
-  shopify,
-  starbucks,
+  rpgGameImage,
   tailwind,
-  tesla,
-  tripguide,
+  twitchCloneImage,
   typescript,
-  web,
+  web
 } from "../assets";
   
   export const navLinks = [
@@ -111,44 +110,44 @@ import {
   const experiences = [
     {
       title: "Web Developer",
-      company_name: "UA",
-      icon: starbucks,
+      company_name: "University of Aveiro",
+      icon: UA,
       iconBg: "#383E56",
       date: "Sep 2022 - Jan 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Actively participated in the development of a website providing detailed information and statistics about all Olympic Games.",
+        "Managed the graphical structure of the site using HTML and CSS, ensuring an intuitive and visually appealing interface.",
+        "Implemented site responsiveness using JavaScript, ensuring a consistent user experience across various devices.",
+        "Collaborated on integrating the site with a provided API, utilizing jQuery and Knockout.js for seamless data communication and management.",
+        "Played a key role in gathering requirements for the API, ensuring that developed functionalities met project specifications.",
       ],
     },
     {
       title: "Full stack Developer",
-      company_name: "UA",
-      icon: tesla,
+      company_name: "University of Aveiro",
+      icon: UA,
       iconBg: "#E6DEDD",
       date: "Sep 2023 - Jan 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Led the development of a SQL Server database and a .NET desktop application for an RPG game, from requirements gathering to data normalization, indexing, and schema design.",
+        "Implemented robust database queries and ensured database security measures, including user permissions and data encryption.",
+        "Designed and implemented the graphical interface of the application to ensure user-friendly navigation and interaction.",
+        "Established seamless connectivity between the application and the SQL Server database using PowerShell scripts for efficient data retrieval and manipulation.",
       ],
     },
     {
       title: "Full stack Developer",
       company_name: "ME",
-      icon: shopify,
+      icon: logo,
       iconBg: "#383E56",
       date: "Jun 2024 - Jul 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developed a Twitch platform clone using Next.js as the foundational framework, Prisma and PostgreSQL for data storage, and styled with Tailwind CSS for aesthetic consistency.",
+        "Implemented user functionalities including user registration, live streaming, and following other users, enhancing user engagement and interaction.",
+        "Designed and developed a recommendation system to suggest content based on user preferences, improving user retention and satisfaction.",
+        "Ensured scalability and performance optimization of the application to handle concurrent user interactions and streaming sessions effectively.",
       ],
     },
-    
   ];
   
   const testimonials = [
@@ -180,69 +179,79 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Olympic Games Info",
       description:
-        "mi in nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget duis at tellus at urna condimentum.",
+        "Website providing detailed information and statistics about all Olympic Games, managed with HTML and CSS, implemented responsiveness with JavaScript, integrated API using jQuery and Knockout.js.",
       tags: [
         {
-          name: "react",
+          name: "html",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "css",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "javascript",
           color: "pink-text-gradient",
         },
+        {
+          name: "jquery",
+          color: "purple-text-gradient",
+        },
+        
       ],
-      image: carrent,
+      image: olympicGamesImage,
       source_code_link: "https://github.com/",
     },
     {
-      name: "Job IT",
+      name: "RPG Game And Database",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Developed SQL Server database and .NET desktop application for an RPG game, included data normalization, robust queries, security measures, and C# integration for database connectivity.",
       tags: [
         {
-          name: "react",
+          name: "sqlserver",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "dotnet",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "csharp",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
+      image: rpgGameImage,
       source_code_link: "https://github.com/",
     },
     {
-      name: "Trip Guide",
+      name: "Twitch Platform Clone",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Developed Twitch platform clone using Next.js, Prisma, PostgreSQL for data storage, and styled with Tailwind CSS, implemented user registration, live streaming, and recommendation system.",
       tags: [
         {
           name: "nextjs",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "prisma",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "postgresql",
           color: "pink-text-gradient",
         },
+        {
+          name: "tailwindcss",
+          color: "orange-text-gradient",
+        },
       ],
-      image: tripguide,
+      image: twitchCloneImage,
       source_code_link: "https://github.com/",
     },
   ];
+  
   
   export { experiences, projects, services, technologies, testimonials };
 

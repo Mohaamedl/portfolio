@@ -28,8 +28,8 @@ const Room3D = ({isMobile}) => {
 
             <primitive
             object={room.scene}
-            scale={isMobile? 0.7 : 1}
-            position={isMobile? [0,-2.3,0] : [0,-1.5,-0.5]}
+            scale={isMobile? 0.65 : 1}
+            position={isMobile? [0,-1.3,0.2] : [0,-1.5,-0.5]}
             rotation={[0,0,0]}
             />
         </mesh>
