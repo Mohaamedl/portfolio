@@ -111,7 +111,7 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          toast.success("Thank you. I will get back to you as soon as possible.");
+          toast.success("Thank you. I will get back to you as soon as possible.",{ id : "alert"});
 
           setForm({
             name: "",
