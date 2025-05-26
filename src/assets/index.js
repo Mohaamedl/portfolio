@@ -7,6 +7,8 @@ import menu from "./menu.svg";
 import mobile from "./mobile.png";
 import web from "./web.png";
 
+import timecoreImage from "./timecoreImage.png";
+import codeWeaverImage from "./codeWeaverImage.png";
 import matlab from "./Matlab.png";
 import UA from "./UA.png";
 import carrent from "./carrent.png";
@@ -39,7 +41,7 @@ export {
   docker, figma, git, github, html,
   javascript, jobit, logo, matlab, menu, meta, mobile, mongodb,
   nodejs, olympicGamesImage, python, reactjs,
-  redux, rpgGameImage, shopify,
+  redux, rpgGameImage, shopify,codeWeaverImage,timecoreImage,
   starbucks, tailwind, tesla, threejs, tripguide, twitchCloneImage, typescript, web
 };
 

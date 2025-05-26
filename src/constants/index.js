@@ -16,9 +16,11 @@ import {
   reactjs,
   rpgGameImage,
   tailwind,
+	timecoreImage,
   twitchCloneImage,
   typescript,
-  web
+  web,
+	codeWeaverImage
 } from "../assets";
   
   export const navLinks = [
@@ -38,22 +40,18 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
-      icon: web,
-    },
-    {
-      title: "Desktop app Developer",
-      icon: mobile,
-    },
-    {
-      title: "Backend Developer",
-      icon: backend,
-    },
-    {
       title: "Fullstack Developer",
       icon: creator,
     },
-  ];
+		{
+      title: "Solid Web Development",
+      icon: web,
+    },
+    {
+      title: "Focused in Backend Development",
+      icon: backend,
+    },
+   ];
   
   const technologies = [
     {
@@ -64,10 +62,6 @@ import {
     {
       name:"C#",
       icon:cs
-    },
-    {
-      name:"Matlab",
-      icon:matlab
     },
     {
       name: "HTML 5",
@@ -106,50 +100,114 @@ import {
 
 
   ];
-  
-  const experiences = [
-    {
-      title: "Web Developer",
-      company_name: "University of Aveiro",
-      icon: UA,
-      iconBg: "#383E56",
-      date: "Sep 2022 - Jan 2023",
-      points: [
-        "Actively participated in the development of a website providing detailed information and statistics about all Olympic Games.",
-        "Managed the graphical structure of the site using HTML and CSS, ensuring an intuitive and visually appealing interface.",
-        "Implemented site responsiveness using JavaScript, ensuring a consistent user experience across various devices.",
-        "Collaborated on integrating the site with a provided API, utilizing jQuery and Knockout.js for seamless data communication and management.",
-        "Played a key role in gathering requirements for the API, ensuring that developed functionalities met project specifications.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "University of Aveiro",
-      icon: UA,
-      iconBg: "#E6DEDD",
-      date: "Sep 2023 - Jan 2024",
-      points: [
-        "Led the development of a SQL Server database and a .NET desktop application for an RPG game, from requirements gathering to data normalization, indexing, and schema design.",
-        "Implemented robust database queries and ensured database security measures, including user permissions and data encryption.",
-        "Designed and implemented the graphical interface of the application to ensure user-friendly navigation and interaction.",
-        "Established seamless connectivity between the application and the SQL Server database using PowerShell scripts for efficient data retrieval and manipulation.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "ME",
-      icon: logo,
-      iconBg: "#383E56",
-      date: "Jun 2024 - Jul 2024",
-      points: [
-        "Developed a Twitch platform clone using Next.js as the foundational framework, Prisma and PostgreSQL for data storage, and styled with Tailwind CSS for aesthetic consistency.",
-        "Implemented user functionalities including user registration, live streaming, and following other users, enhancing user engagement and interaction.",
-        "Designed and developed a recommendation system to suggest content based on user preferences, improving user retention and satisfaction.",
-        "Ensured scalability and performance optimization of the application to handle concurrent user interactions and streaming sessions effectively.",
-      ],
-    },
-  ];
-  
+const experiences = [
+  {
+    title: "Software Engineer – Internship",
+    company_name: "Huellatina",
+    icon: logo,
+    iconBg: "#E6DEDD",
+    date: "Mar 2025 – Present",
+    points: [
+      "Redesigned and extended the company’s WordPress website with custom HTML, CSS, JavaScript, and PHP.",
+      "Integrated MySQL databases and connected CRM and CMS systems through REST APIs.",
+      "Improved site performance, SEO, and content management workflows.",
+      "Collaborated with design and marketing teams to ensure brand alignment and accessibility."
+    ]
+  },
+  {
+    title: "Hackathon Developer – CodeWeaver",
+    company_name: "Sword Health Hackathon",
+    icon: logo,
+    iconBg: "#383E56",
+    date: "Mar 2025",
+    points: [
+      "Co-developed CodeWeaver, a web-based tool to analyze software architecture using React, TypeScript, Python, and OpenAI.",
+      "Used static analysis and multi-agent AI to detect design issues and architectural smells in GitHub repositories.",
+      "Integrated a conversational assistant for custom architectural planning and design decision-making.",
+      "Worked on template generation, agent coordination, and contextual reasoning with RAG techniques."
+    ]
+  },
+  {
+    title: "Research Assistant",
+    company_name: "University of Aveiro – Physics Department",
+    icon: UA,
+    iconBg: "#383E56",
+    date: "Sep 2023 – Jul 2024",
+    points: [
+      "Developed a MATLAB interface for simulating and controlling light beams with orbital angular momentum (OAM).",
+      "Enabled researchers to test OAM-based communication techniques with real-time feedback.",
+      "Enhanced system usability for physics researchers without programming experience."
+    ]
+  }
+];
+
+  const projects = [
+  {
+    name: "CodeWeaver – Smarter Architecture Tool",
+    description:
+      "Developed during the Sword Health Hackathon, CodeWeaver is an AI-powered tool to help developers understand and improve software architecture. It analyzes GitHub repositories, detects architectural issues, and offers intelligent design planning via a conversational assistant.",
+    tags: [
+      { name: "react", color: "blue-text-gradient" },
+      { name: "typescript", color: "green-text-gradient" },
+      { name: "python", color: "pink-text-gradient" },
+      { name: "openai", color: "purple-text-gradient" },
+      { name: "architecture", color: "orange-text-gradient" }
+    ],
+    image: codeWeaverImage,
+    source_code_link: "https://github.com/Mohaamedl/CodeWeaver"
+  },
+  {
+    name: "TimeCore – Calendar Manager",
+    description:
+      "Feature-rich calendar manager with PDF import, event merging, CRUD, and ICS export. Built using Spring Boot, React, MySQL, and Tailwind CSS with a clean layered architecture. Currently integrating AI-based scheduling.",
+    tags: [
+      { name: "springboot", color: "green-text-gradient" },
+      { name: "react", color: "blue-text-gradient" },
+      { name: "mysql", color: "pink-text-gradient" },
+      { name: "tailwindcss", color: "orange-text-gradient" }
+    ],
+    image: timecoreImage,
+    source_code_link: "https://github.com/Mohaamedl/TimeCore---Backend"
+  },
+  {
+    name: "Twitch Platform Clone",
+    description:
+      "Twitch-style streaming platform built with Next.js, Tailwind CSS, Prisma, PostgreSQL, and Clerk. Includes live streaming, chat, user auth, following system, and recommendation engine.",
+    tags: [
+      { name: "nextjs", color: "blue-text-gradient" },
+      { name: "prisma", color: "green-text-gradient" },
+      { name: "postgresql", color: "pink-text-gradient" },
+      { name: "tailwindcss", color: "orange-text-gradient" }
+    ],
+    image: twitchCloneImage,
+    source_code_link: "https://github.com/Mohaamedl/Twitch_clone"
+  },
+  {
+    name: "RPG Game and Database",
+    description:
+      "Built an RPG character management system with SQL Server and .NET desktop frontend. Included robust data structure, filters, secure access, and C# integration with PowerShell scripts.",
+    tags: [
+      { name: "sqlserver", color: "blue-text-gradient" },
+      { name: "dotnet", color: "green-text-gradient" },
+      { name: "csharp", color: "pink-text-gradient" }
+    ],
+    image: rpgGameImage,
+    source_code_link: "https://github.com/Mohaamedl/DB-project"
+  },
+  {
+    name: "Olympic Games Info",
+    description:
+      "Academic project showing comprehensive Olympic statistics. Web app built with HTML, CSS, JavaScript, jQuery, and Knockout.js. Designed for responsiveness and API integration.",
+    tags: [
+      { name: "html", color: "blue-text-gradient" },
+      { name: "css", color: "green-text-gradient" },
+      { name: "javascript", color: "pink-text-gradient" },
+      { name: "jquery", color: "purple-text-gradient" }
+    ],
+    image: olympicGamesImage,
+    source_code_link: "https://github.com/Mohaamedl/Projeto_ITW"
+  }
+];
   const testimonials = [
     {
       testimonial:
@@ -176,82 +234,7 @@ import {
       image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
   ];
-  
-  const projects = [
-    {
-      name: "Olympic Games Info",
-      description:
-        "Website providing detailed information and statistics about all Olympic Games, managed with HTML and CSS, implemented responsiveness with JavaScript, integrated API using jQuery and Knockout.js.",
-      tags: [
-        {
-          name: "html",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "css",
-          color: "green-text-gradient",
-        },
-        {
-          name: "javascript",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "jquery",
-          color: "purple-text-gradient",
-        },
-        
-      ],
-      image: olympicGamesImage,
-      source_code_link: "https://github.com/Mohaamedl/Projeto_ITW",
-    },
-    {
-      name: "RPG Game And Database",
-      description:
-        "Developed SQL Server database and .NET desktop application for an RPG game, included data normalization, robust queries, security measures, and C# integration for database connectivity.",
-      tags: [
-        {
-          name: "sqlserver",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "dotnet",
-          color: "green-text-gradient",
-        },
-        {
-          name: "csharp",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: rpgGameImage,
-      source_code_link: "https://github.com/Mohaamedl/DB-project",
-    },
-    {
-      name: "Twitch Platform Clone",
-      description:
-        "Developed Twitch platform clone using Next.js, Prisma, PostgreSQL for data storage, and styled with Tailwind CSS, implemented user registration, live streaming, and recommendation system.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "prisma",
-          color: "green-text-gradient",
-        },
-        {
-          name: "postgresql",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "tailwindcss",
-          color: "orange-text-gradient",
-        },
-      ],
-      image: twitchCloneImage,
-      source_code_link: "https://github.com/Mohaamedl/Twitch_clone",
-    },
-  ];
-  
+      
   
   export { experiences, projects, services, technologies, testimonials };
 
