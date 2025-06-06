@@ -46,7 +46,11 @@ const About = () =>{
         vartiants={fadeIn("","",0.1,1)}
         className="mt-4 text-secondary text-{17px] max-w-3lx leading-[30px]"
         >
-        I am a Software Developer and Physicist with a strong background in Mathematics, Programming, and Data Analysis. My experience includes mathematical modeling, computational simulation, and the development of web and desktop applications.
+I'm a Software Developer and Physicist with a passion for backend systems, clean architecture, and intelligent automation. With a background in Physics and Mathematics, I bring analytical thinking and problem-solving to every project.
+
+Currently, I’m training at IEFP Porto and 42 Porto, building RESTful APIs in Java and Spring Boot, while diving deep into systems programming with C. My stack includes Java, Python, FastAPI, MySQL, PostgreSQL, and React.
+
+From tools like TimeCore, a smart schedule manager, to CodeWeaver, an AI-driven architecture analyzer, I create software that solves real problems with clarity and structure. I believe great code tells a story, one made of logic, precision, and purpose.
         </motion.p>
         <div className="mt-2 flex flex-wrap gap-10">
             {services.map((service,index) => (
